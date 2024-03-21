@@ -1,11 +1,11 @@
 body {
   background-image: url("icon.png");
   background-repeat: no-repeat;
-  background-size: contain; /* Adjust background-size property */
+  background-size: cover;
   background-color: #111111;
   margin: 0;
   padding: 0;
-  min-height: 100vh; 
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -14,7 +14,7 @@ body {
 .links {
   display: flex;
   justify-content: center;
-  padding-bottom: 5%; /* Adjust padding for vertical spacing */
+  padding-bottom: 325px;
 }
 
 @keyframes glow {
@@ -49,7 +49,6 @@ a:hover {
 a img {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
   width: 20px;
-  height: auto; /* Ensure aspect ratio is maintained */
   transition: transform 0.3s, filter 0.3s;
 }
 
